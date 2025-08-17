@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hardik Bishnoi | Portfolio</title>
   <style>
-    body { margin:0; font-family:Arial, sans-serif; background:#121212; color:#f5f5f5; }
-    header { background:#1f1f1f; padding:20px; text-align:center; }
-    header h1 { margin:0; font-size:2.5rem; color:#00adb5; }
-    header p { font-size:1.2rem; color:#ccc; }
-    nav a { margin:0 15px; text-decoration:none; color:#eee; font-weight:bold; }
-    nav a:hover { color:#00adb5; }
-    section { padding:50px 15%; }
-    h2 { color:#00adb5; margin-bottom:20px; }
+    body { margin:0; font-family: 'Segoe UI', sans-serif; background:#0d1117; color:#e6edf3; }
+    header { background:#161b22; padding:40px 20px; text-align:center; }
+    header h1 { margin:0; font-size:3rem; color:#58a6ff; }
+    header p { font-size:1.2rem; color:#c9d1d9; }
+    nav { margin-top:15px; }
+    nav a { margin:0 15px; text-decoration:none; color:#e6edf3; font-weight:bold; }
+    nav a:hover { color:#58a6ff; }
+    section { padding:60px 12%; }
+    h2 { color:#58a6ff; margin-bottom:20px; font-size:2rem; }
+    .card { background:#161b22; padding:20px; border-radius:10px; margin-bottom:20px; box-shadow:0 4px 10px rgba(0,0,0,0.4); transition:0.3s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.6); }
     ul { line-height:1.8; }
-    .card { background:#1e1e1e; padding:20px; border-radius:8px; margin-bottom:20px; }
-    footer { background:#1f1f1f; padding:15px; text-align:center; color:#777; }
-    a { color:#00adb5; }
+    footer { background:#161b22; padding:20px; text-align:center; color:#777; margin-top:40px; }
+    a { color:#58a6ff; text-decoration:none; }
     a:hover { color:#fff; }
   </style>
 </head>
@@ -28,6 +30,7 @@
     <p>Aspiring Software Developer | B.E. CSE @ Chandigarh University</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#certifications">Certifications</a>
@@ -38,11 +41,32 @@
   <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I am a Computer Science Engineering student at Chandigarh University with a passion for web development and software engineering. 
-    I enjoy solving problems, learning new technologies, and building projects that make an impact.</p>
-    <p><b>Education:</b><br>
-       B.E. Computer Science Engineering, Chandigarh University (2022–Present), CGPA: 7.81
-    </p>
+    <div class="card">
+      <p>Hello! I’m <b>Hardik Bishnoi</b>, a Computer Science Engineering student at Chandigarh University. 
+      I am passionate about <b>software development, problem-solving, and web technologies</b>. I enjoy creating applications 
+      that solve real-life problems and make tasks easier.</p>
+      <p>I have hands-on experience with <b>C++, Java, Python, HTML, CSS, JavaScript, SQL, and PL/SQL</b>. 
+      My interests include <b>web development, cloud computing, and IoT</b>. I’m constantly learning new skills 
+      to stay updated with industry trends. My goal is to become a <b>skilled full-stack developer</b> and 
+      contribute to impactful projects.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p><b>B.E. Computer Science Engineering</b>, Chandigarh University, Mohali, India (2022 – Present)<br>
+      CGPA: 7.81</p>
+    </div>
+    <div class="card">
+      <p><b>Intermediate (CBSE)</b>, Govt. Model Sr. Sec. School, Chandigarh (2021 – 2022)<br>
+      Percentage: 74.2%</p>
+    </div>
+    <div class="card">
+      <p><b>Matriculation (CBSE)</b>, Shanti Niketan Sr. Sec. School, Hisar, Haryana (2019 – 2020)<br>
+      Percentage: 81.2%</p>
+    </div>
   </section>
 
   <!-- SKILLS -->
@@ -63,17 +87,22 @@
     <h2>Projects</h2>
     <div class="card">
       <h3>Student Performance Tracking System</h3>
-      <p>Web-based application to track student marks & grades using HTML, CSS, and JS.</p>
+      <p>A web-based application built using HTML, CSS, and JavaScript to track student performance. 
+      This system allows parents and teachers to monitor grades and marks, reducing manual errors by 25%. 
+      It also improved parental engagement by 30% and reduced report generation time by 40%.</p>
       <p><i>GitHub Link: Coming Soon</i></p>
     </div>
     <div class="card">
       <h3>Sudoku Solver (C++)</h3>
-      <p>Efficient C++ program to solve Sudoku puzzles using algorithms.</p>
+      <p>A C++ program that efficiently solves Sudoku puzzles using backtracking algorithms. 
+      The solver achieved a 95% success rate in solving puzzles within milliseconds, reducing computation time by 40%.</p>
       <p><i>GitHub Link: Coming Soon</i></p>
     </div>
     <div class="card">
       <h3>Employee Management System (DBMS)</h3>
-      <p>Comprehensive DBMS project using PL/SQL for employee data management.</p>
+      <p>Designed and implemented a database-driven system using PL/SQL to manage employee records. 
+      It optimized data management, improved query response times by 50%, and reduced report generation 
+      time by 35%. The system also reduced data input errors by 15%.</p>
       <p><i>GitHub Link: Coming Soon</i></p>
     </div>
   </section>
@@ -83,12 +112,13 @@
     <h2>Certifications & Achievements</h2>
     <div class="card">
       <ul>
-        <li>NPTEL - Internet of Things (83/100)</li>
-        <li>NPTEL - Cloud Computing (80/100)</li>
-        <li>NPTEL - Foundation of Cloud IoT Edge ML (75/100)</li>
+        <li>NPTEL - Internet of Things: 83/100</li>
+        <li>NPTEL - Cloud Computing: 80/100</li>
+        <li>NPTEL - Foundation of Cloud IoT Edge ML: 75/100</li>
         <li>DSA Workshop - IIT Roorkee</li>
         <li>Web Development Workshop - IIT Roorkee</li>
-        <li>Design Thinking & Innovation - LinkedIn</li>
+        <li>Design Thinking and Innovation - LinkedIn</li>
+        <li>Database Management System - Coursera</li>
       </ul>
     </div>
   </section>
@@ -96,9 +126,12 @@
   <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:bishnoihardik29@gmail.com">bishnoihardik29@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/hardik-bishnoi-6b954b262/" target="_blank">linkedin.com/in/hardik-bishnoi</a></p>
-    <p>GitHub: <a href="https://github.com/bishnoi29hardik" target="_blank">github.com/bishnoi29hardik</a></p>
+    <div class="card">
+      <p>Email: <a href="mailto:bishnoihardik29@gmail.com">bishnoihardik29@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/hardik-bishnoi-6b954b262/" target="_blank">linkedin.com/in/hardik-bishnoi</a></p>
+      <p>GitHub: <a href="https://github.com/bishnoi29hardik" target="_blank">github.com/bishnoi29hardik</a></p>
+      <p>Phone: +91 7027805505</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
